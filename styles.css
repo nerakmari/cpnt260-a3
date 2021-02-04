@@ -5,6 +5,7 @@ body {
   background-color: rgb(27, 41, 51);
   color: white;
   text-align: center;
+  
 }
 
 h2, h3 {
@@ -15,7 +16,9 @@ h2, h3 {
 }
 
 .content1, .content2, .content3 {
-  font-size: 20px;
+  font-size: 50px;
+  font-size: clamp(1rem, -3.3644rem + 1.1186vw, 4.5rem);
+
 }
 /*Header*/
 .hero {
@@ -37,14 +40,11 @@ h2, h3 {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-
 .first {
   grid-column: 1/2;
   margin: 0;
   padding: 0;  
   text-align: center;
-  transition: .1s;
-  
 }
 .second {
   grid-column: 3/4;
@@ -90,10 +90,11 @@ a:hover {
   background-position: right;
   background-repeat: no-repeat;
   
-  display: flex;
-  flex-flow: row wrap;
+  
 }
-
+.content1, .phil{
+  text-align: left;
+}
 
 /*About*/
 
@@ -144,9 +145,9 @@ a:hover {
   grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
   row-gap: 5px;
-
   font-size: 24px;
 }
+
 
 img {
   max-width: 350px;
@@ -163,20 +164,76 @@ img {
 }
 
 /* Footer */
-footer {
-  padding:5px;
+footer, .contact {
+  padding:20px;
   background-color: seagreen;
 }
 /* Media Query*/
+
+@media screen and (max-width:1410px) {
+
+  header{
+    margin-bottom: 30px;
+  }
+  .philosophy {
+    margin-top: 40px;
+  }
+  .philosophy, .about, .why, .how, .content1, .content2, .content3{
+    display: flex;
+    flex-direction: column;
+    margin:50px;
+    padding: 50px;
+    background-size: 300px;
+    font-size: 18px;
+  }
+}
 
 @media screen and (max-width: 1050px) {
   .first, .second {
     margin-top: 400px;
     font-size: 70px;
-
   }
+
+.philosophy, .about, .why, .how {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  background-image: none; 
+  text-align: center;
+
+  font-size: 18px;
+}
+}
+
 @media screen and (max-width: 600px) {
   nav ul {
     flex-direction: column-reverse;
+  }
+
+  .first, .second {
+    font-size: 40px;
+  }
+  .philosophy, .about, .why, .how {
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 19pt;
+  }
+
+  .phil {
+    text-align:center;
+    letter-spacing: 5px;
+  }
+
+  .content1, .content2, .content3 {
+    letter-spacing: none;
+    font-size: 15pt;
+  }
+
+  img {
+    max-width: 200px;
   }
 }
