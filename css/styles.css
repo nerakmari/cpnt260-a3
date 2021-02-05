@@ -32,7 +32,7 @@ h2, h3 {
   font-size: 100px;
   color: white;
   letter-spacing: 5px;
-  background-image: url(./assets/svg/envelope.svg);
+  background-image: url(../assets/svg/envelope.svg);
   background-size: cover;
   background-size: contain;
   background-position: center;
@@ -86,7 +86,7 @@ a:hover {
   margin: 0;
   padding:150px;
 
-  background-image: url(./assets/svg/world.svg);
+  background-image: url(../assets/svg/world.svg);
   background-size: cover;
   background-size: contain;
   background-position: right;
@@ -104,7 +104,7 @@ a:hover {
   margin: 0;
   padding:150px;
 
-  background-image: url(./assets/svg/travel-pic.svg);
+  background-image: url(../assets/svg/travel-pic.svg);
   background-size: cover;
   background-size: contain;
   background-position: left;
@@ -123,7 +123,7 @@ a:hover {
   margin: 0;
   padding:150px;
 
-  background-image: url(./assets/svg/adventure.svg);
+  background-image: url(../assets/svg/adventure.svg);
   background-size: cover;
   background-size: contain;
   background-position: right;
