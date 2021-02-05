@@ -13,25 +13,24 @@ h2, h3 {
   font-size: 25pt;
   text-align: center;
   letter-spacing: 10px;
-
-  
 }
 
 .content1, .content2, .content3 {
   font-size: 40px;
   font-size: clamp(1rem, -3.3644rem + 1.1186vw, 4.5rem);
-
 }
+
 /*Header*/
 .hero {
   height: 100vh;
 }
+
 .opening {
-  
   font-family: 'Bebas Neue', cursive;
   font-size: 100px;
   color: white;
   letter-spacing: 5px;
+
   background-image: url(../assets/svg/envelope.svg);
   background-size: cover;
   background-size: contain;
@@ -48,6 +47,7 @@ h2, h3 {
   padding: 0;  
   text-align: center;
 }
+
 .second {
   grid-column: 3/4;
 }
@@ -59,21 +59,26 @@ nav ul{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
+ 
   margin: 0;
   padding: .3rem;
-  list-style-type: none;
   background-color: seagreen;
+
+  list-style-type: none; 
 }
 
 li a {
   text-decoration: none;
-  color: white;
-  cursor: pointer;
   background-color: seagreen;
+  color: white;
+  
   margin: auto;
   padding: 1rem;
+
   display: inline-flex;
   justify-content: space-evenly;
+
+  cursor: pointer;
 }
 
 a:hover {
@@ -82,6 +87,7 @@ a:hover {
 }
 
 /*Philosophy*/
+
 .philosophy{
   margin: 0;
   padding:150px;
@@ -93,7 +99,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.content1, .phil{
+.content1 {
   text-align: left;
 }
 
@@ -110,6 +116,7 @@ a:hover {
   background-repeat: no-repeat;
 
   display: flex;
+  flex-flow: row wrap;
 }
 
 .content2 {
@@ -129,6 +136,7 @@ a:hover {
   background-repeat: no-repeat;
   
   display: flex;
+  flex-flow: row wrap;
 }
 
 .content3 {
@@ -168,8 +176,7 @@ img {
 
 /* Footer */
 footer {
-  margin: auto;
-  padding: 1rem;
+  padding: 0;
   background-color: seagreen;
 }
 
@@ -182,27 +189,29 @@ ul {
   flex-flow: row wrap;
 }
 
+li a{
+  margin:0;
+}
+
 /* Media Query*/
 
 @media screen and (max-width:1410px) {
-
   header{
     margin-bottom: 25px;
   }
   .philosophy {
     margin-top: 40px;
     padding: 0;
-
-    
   }
+
   .philosophy, .about, .why, .how, .content1, .content2, .content3{
     display: flex;
     flex-direction: column;
     margin:50px;
-    padding: 50px;
-    background-size: 300px;
+    padding: 20px;
+    background-image: none;
     font-size: 18px;
-    
+    text-align: center;
   }
 }
 
@@ -211,13 +220,14 @@ ul {
     margin-top: 400px;
     font-size: 70px;
   }
+
   .philosophy, .about, .why, .how {
   padding: 50px;
   display: flex;
   flex-direction: column;
   background-image: none; 
+  
   text-align: center;
-
   font-size: 18px;
 }
 }
@@ -238,7 +248,6 @@ ul {
     justify-content: center;
 
     font-size: 19pt;
-    letter-spacing: none;
   }
 
   .phil {
